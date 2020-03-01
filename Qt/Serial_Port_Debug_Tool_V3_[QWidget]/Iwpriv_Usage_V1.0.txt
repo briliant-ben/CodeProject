@@ -1,0 +1,71 @@
+<font>
+<br/>base module:
+<br/>iwpriv dbg usage
+<br/>iwpriv dbg base
+<br/>iwpriv dbg efuse
+<br/>iwpriv dbg efuse size
+<br/>iwpriv dbg global comp level
+<br/>
+<br/>reg module:
+<br/><br/>iwpriv dbg mac
+<br/>iwpriv dbg mac r addr size
+<br/>iwpriv dbg mac w addr size value
+<br/>iwpriv dbg bb
+<br/>iwpriv dbg bb r addr
+<br/>iwpriv dbg bb w addr value
+<br/>iwpriv dbg rf
+<br/>iwpriv dbg rf r rfpath addr
+<br/>iwpriv dbg rf w rfpath addr value
+<br/>
+<br/>mode module:
+<br/>iwpriv dbg sta
+<br/>iwpriv dbg ap
+<br/>iwpriv dbg ap sta
+<br/>iwpriv dbg conc
+<br/>iwpriv dbg link 0/1
+<br/>
+<br/>flow module:
+<br/>iwpriv dbg flow
+<br/>iwpriv dbg rx
+<br/>iwpriv dbg rx dump N
+<br/>iwpriv dbg tx
+<br/>iwpriv dbg tx page
+<br/>iwpriv dbg tx dump N
+<br/>iwpriv dbg tx report 0/1
+<br/>
+<br/>phydm module:
+<br/>iwpriv dbg phy
+<br/>iwpriv dbg ant N
+<br/>iwpriv dbg dmflag N
+<br/>iwpriv dbg dmfunc N
+<br/>iwpriv dbg igi N
+<br/>iwpriv dbg sigdbg 0
+<br/>iwpriv dbg sigdbg 1 N
+<br/>iwpriv dbg txagc sign N
+<br/>iwpriv dbg fixch N
+<br/>iwpriv dbg noise
+<br/>iwpriv dbg fixra N
+<br/>iwpriv dbg comp N
+<br/>iwpriv dbg odmflag
+<br/>iwpriv dbg odmflag N
+<br/>iwpriv dbg cwb40
+<br/>iwpriv dbg cwb40 0/1
+<br/> 
+<br/>mlme module: 
+<br/>iwpriv dbg ps
+<br/>iwpriv dbg ps 0/1
+<br/>iwpriv dbg stbc rx N
+<br/>iwpriv dbg stbc en 0
+<br/>iwpriv dbg stbc en 1 N
+<br/>iwpriv dbg ldpc 0
+<br/>iwpriv dbg ldpc 1 N
+<br/>iwpriv dbg ampdu 0/1		
+<br/> 
+<br/>bt module: 
+<br/>iwpriv dbg btco			
+<br/> 
+<br/>hci module:
+<br/>iwpriv dbg sdio			
+<br/>iwpriv dbg usb				
+<br/> 
+</font> 

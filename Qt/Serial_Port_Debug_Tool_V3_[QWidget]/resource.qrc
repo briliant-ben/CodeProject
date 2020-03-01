@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Iwpriv_Usage_V1.0.txt</file>
+        <file>RTK-WDT.ico</file>
+    </qresource>
+</RCC>

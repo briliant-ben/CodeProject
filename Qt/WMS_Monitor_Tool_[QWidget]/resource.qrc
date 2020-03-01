@@ -1,0 +1,68 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/B仓储64X64.png</file>
+        <file>image/B人员64X64.png</file>
+        <file>image/B调度64X64.png</file>
+        <file>image/B统计64X64.png</file>
+        <file>image/B退出.png</file>
+        <file>image/报表64X64.png</file>
+        <file>image/监控64X64.png</file>
+        <file>image/日志64X64.png</file>
+        <file>image/退出.png</file>
+        <file>image/退出64X64.png</file>
+        <file>qss/qsstemp.qss</file>
+        <file>image/nightsky.jpg</file>
+        <file>image/信息2.png</file>
+        <file>image/仓储 (1).png</file>
+        <file>image/报表W.png</file>
+        <file>image/监控W.png</file>
+        <file>image/人员W.png</file>
+        <file>image/日志W.png</file>
+        <file>image/调度W.png</file>
+        <file>image/统计W.png</file>
+        <file>image/出库W.png</file>
+        <file>image/库存W.png</file>
+        <file>image/盘点W (1).png</file>
+        <file>image/盘点W.png</file>
+        <file>image/入库W.png</file>
+        <file>image/W报表.png</file>
+        <file>image/W仓储.png</file>
+        <file>image/W监控.png</file>
+        <file>image/W人员.png</file>
+        <file>image/W日志.png</file>
+        <file>image/W调度.png</file>
+        <file>image/W信息.png</file>
+        <file>image/agv-1.png</file>
+        <file>image/agv-2.png</file>
+        <file>image/agv-3.png</file>
+        <file>image/W统计.png</file>
+        <file>image/time.png</file>
+        <file>image/time1.png</file>
+        <file>image/时间 (1).png</file>
+        <file>image/时间 (2).png</file>
+        <file>image/时间 (3).png</file>
+        <file>image/时间.png</file>
+        <file>image/agv机器人.png</file>
+        <file>image/xxq-小型加工机床.png</file>
+        <file>image/车辆管理-2.png</file>
+        <file>image/车辆调度.png</file>
+        <file>image/机械手.png</file>
+        <file>image/权限.png</file>
+        <file>image/人员信息.png</file>
+        <file>image/任务.png</file>
+        <file>image/任务3.png</file>
+        <file>image/任务调度1.png</file>
+        <file>image/实时监控.png</file>
+        <file>image/A报表.png</file>
+        <file>image/A仓储.png</file>
+        <file>image/A仓储日志.png</file>
+        <file>image/A操作日志.png</file>
+        <file>image/A车辆信息.png</file>
+        <file>image/A管线材料统计.png</file>
+        <file>image/A调度任务日志.png</file>
+        <file>image/监控日志.png</file>
+        <file>image/A人事报表.png</file>
+        <file>image/A调度记录.png</file>
+        <file>image/system.png</file>
+    </qresource>
+</RCC>

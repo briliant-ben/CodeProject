@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QMainWindow" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family: Microsoft YaHei UI;
+	font: 10pt;
+}
+
+QMainWindow{
+}
+
+QMenuBar{
+	background-color: rgb(212, 212, 213);
+}
+
+QToolBar QToolButton{
+}
+
+QToolBar{
+	background-color: #8194ad;
+}
+
+QDockWidget{
+	background-color: rgb(212, 212, 213);
+}
+
+QTreeWidget{
+	background-color: #6e7d94; 
+    color: white;  
+}
+
+QTreeWidget::item{
+    margin: 1px;
+	height: 25px;
+    background-color: #6e7d94;
+    background-clip: margin;  
+}
+
+QTreeView::branch{
+	
+}
+
+QTreeWidget::item:hover{
+    background: #8799b5;   
+}
+
+
+
+  QTabWidget::pane { /* The tab widget frame */
+      border-top: 1px solid #C2C7CB;
+  }
+
+  QTabWidget::tab-bar {
+      left: 2px; /* move to the right by 5px */
+  }
+
+  /* Style the tab using the tab sub-control. Note that
+      it reads QTabBar _not_ QTabWidget */
+  QTabBar::tab {
+	width:100px;
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #E1E1E1, stop: 0.4 #DDDDDD,
+                                  stop: 0.5 #D8D8D8, stop: 1.0 #D3D3D3);
+      border: 1px solid #C4C4C3;
+      border-bottom-color: #C2C7CB; /* same as the pane color */
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      min-width: 8ex;
+      padding: 1px;
+  }
+
+  QTabBar::tab:selected, QTabBar::tab:hover {
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                  stop: 0 #fafafa, stop: 0.4 #f4f4f4,
+                                  stop: 0.5 #e7e7e7, stop: 1.0 #fafafa);
+  }
+
+  QTabBar::tab:selected {
+      border-color: #9B9B9B;
+      border-bottom-color: #C2C7CB; /* same as pane color */
+  }
+
+  QTabBar::tab:!selected {
+      margin-top: 1px; /* make non-selected tabs look smaller */
+  }
+
+
+
+
+
+QStatusBar{
+	background-color: rgb(212, 212, 213);
+}
+
+QComboBox#tabper_choicecombo{
+
+}
+
+QPushButton{
+	width:75px;
+	height:23px;
+	border: 1px solid #b8b8b8;
+	border-radius: 2px;
+	background-color: #b8b8b8;
+}
+
+QPushButton:enabled{
+	color: rgb(255, 255, 255);
+	border: 1px solid #384299;
+	border-radius: 2px;
+	background-color: #384299;
+}
+
+QPushButton:pressed{
+	color: #34fcfc;
+	background-color: #5d70ff;
+}
+
+QTableView {
+	gridline-color: white;
+	background-color: #c1c1c2;
+	border: 1px groove gray;
+}
+
+QHeaderView {
+	color: white;
+	background-color: #6e7d94;
+	min-height:28px;
+}
+
+QTableView QTableCornerButton::section {
+	background: #6e7d94;
+}
+
+QHeaderView::section {
+	color: white;
+	background-color: #6e7d94;
+	padding: 5px;
+}
+
+  QGroupBox {
+      background-color:#cfcfd1;
+      border: 2px solid #384299;
+      border-radius: 5px;
+      margin-top: 1ex; /* leave space at the top for the title */
+  }
+
+  QGroupBox#tabhome_weathergpb {
+      background-color:#ffffff;
+      border: 2px solid #384299;
+      border-radius: 5px;
+      margin-top: 1ex; /* leave space at the top for the title */
+  }
+  QGroupBox#tabhome_calendargpb {
+      background-color:#ffffff;
+      border: 2px solid #384299;
+      border-radius: 5px;
+      margin-top: 1ex; /* leave space at the top for the title */
+  }
+
+  QGroupBox::title {
+      border:2px solid #384299;
+      border-radius: 1px;
+      subcontrol-origin: margin;
+      subcontrol-position: top center; /* position at the top center */
+      padding: 0 3px;
+      background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                        stop: 0 #394299, stop: 1 #FFFFFF);
+  }
+
+QLabel#tabmonagv_piclabel1{
+	image: url(:/image/agv-1.png);
+}
+
+QLabel#tabmonagv_piclabel2{
+	border-image: url(:/image/agv-2.png);
+}
+
+QListWidget#listWidget_2{
+	color: rgb(255, 255, 255);
+	background-color: #6e7d94;
+}
+
+QTextBrowser{
+	background-color: rgb(207, 207, 209);
+}
+
+QPushButton#tabadmin_refreshbutton{
+	border:1px solid #8194AD;
+	color: #FFFFFF;
+	background-color: #8194AD;
+}
+
+QCalendarWidget{
+	background-color: rgb(255, 255, 255);
+}
+
+QCalendarWidget QAbstractItemView
+{
+background-color: #ffffff; 
+selection-background-color: #8194AD; 
+selection-color: white;
+}
+
+QCalendarWidget QToolButton{
+	color: rgb(255, 255, 255);
+}
+
+QCalendarWidget QWidget{
+border-radius: 2px;
+background-color: #8194AD;
+}
+
+QCalendarWidget QFrame{
+border: none;
+background-color: #ffffff;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabwidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+      <property name="movable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="tabhomepage">
+       <attribute name="title">
+        <string>主 页</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>6</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="rightMargin">
+         <number>6</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="tabhome_weathergpb">
+          <property name="minimumSize">
+           <size>
+            <width>305</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>542</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>天气信息</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <property name="topMargin">
+            <number>25</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="tabhome_weatherlabel">
+               <property name="text">
+                <string>近三天天气：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tabadmin_refreshbutton">
+               <property name="maximumSize">
+                <size>
+                 <width>74</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>刷 新</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QFrame" name="tabadmin_frame">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>280</width>
+               <height>145</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>180</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="tabhome_storinfogpb">
+          <property name="minimumSize">
+           <size>
+            <width>305</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>542</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>公司公告</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <property name="leftMargin">
+            <number>6</number>
+           </property>
+           <property name="topMargin">
+            <number>25</number>
+           </property>
+           <property name="rightMargin">
+            <number>6</number>
+           </property>
+           <property name="bottomMargin">
+            <number>6</number>
+           </property>
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QListWidget" name="tabhome_storinfolist">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(207, 207, 209);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="verticalScrollBarPolicy">
+              <enum>Qt::ScrollBarAlwaysOff</enum>
+             </property>
+             <item>
+              <property name="text">
+               <string>2017.10.27      您是第33次登录系统！</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.10.17      公司明日起将严格执行考勤</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.10.04      关于吕荣同志职位调整公告</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.10.04      关于宋任同志职位调整公告</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.10.02      公司2017年第三季度经营情况</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.09.20      公司有关工资卡的使用通知</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.09.16      园区内道路施工通知</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.09.08      公司领导视察钢管事业部</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.08.30      公司高温放假通知</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.08.30      关于做好防暑降温工作的通知</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2017.08.21      关于财务报销有关事项的通知</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="tabhome_linksgpb">
+          <property name="minimumSize">
+           <size>
+            <width>305</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>542</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	border:none;
+	color: rgb(0, 0, 0);
+	background-color: rgb(207, 207, 209);
+}</string>
+          </property>
+          <property name="title">
+           <string>友情链接</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <property name="topMargin">
+            <number>25</number>
+           </property>
+           <item row="1" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton2">
+               <property name="text">
+                <string>企业信息网</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton6">
+               <property name="text">
+                <string>系统使用手册</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton1">
+               <property name="text">
+                <string>百度一下</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton5">
+               <property name="text">
+                <string>电话通讯目录</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton3">
+               <property name="text">
+                <string>企业人事网</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton7">
+               <property name="text">
+                <string>信息咨询中心</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton4">
+               <property name="text">
+                <string>物资管理中心</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCommandLinkButton" name="tabadmin_linkbutton8">
+               <property name="text">
+                <string>文献查询中心</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="tabhome_calendargpb">
+          <property name="minimumSize">
+           <size>
+            <width>305</width>
+            <height>248</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>542</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>日历时间</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="leftMargin">
+            <number>9</number>
+           </property>
+           <property name="topMargin">
+            <number>25</number>
+           </property>
+           <property name="rightMargin">
+            <number>9</number>
+           </property>
+           <property name="bottomMargin">
+            <number>9</number>
+           </property>
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QCalendarWidget" name="tabhome_calendar">
+             <property name="gridVisible">
+              <bool>false</bool>
+             </property>
+             <property name="verticalHeaderFormat">
+              <enum>QCalendarWidget::NoVerticalHeader</enum>
+             </property>
+             <property name="dateEditEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="main_filemanageaction"/>
+    <addaction name="separator"/>
+    <addaction name="main_quitaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="main_storageaction"/>
+    <addaction name="main_dispatchaction"/>
+    <addaction name="main_monitoraction"/>
+    <addaction name="main_personnelaction"/>
+    <addaction name="separator"/>
+    <addaction name="main_journalaction"/>
+    <addaction name="main_statisticaction"/>
+    <addaction name="main_reportaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>选项(&amp;O)</string>
+    </property>
+    <widget class="QMenu" name="menu_T">
+     <property name="title">
+      <string>工具栏(&amp;T)</string>
+     </property>
+     <addaction name="main_toolbar1action"/>
+     <addaction name="main_toobar2action"/>
+     <addaction name="mian_toolbar3action"/>
+    </widget>
+    <widget class="QMenu" name="menu_W_2">
+     <property name="title">
+      <string>窗 口(&amp;W)</string>
+     </property>
+     <addaction name="main_fullscreenaction"/>
+     <addaction name="main_adminaction"/>
+     <addaction name="separator"/>
+     <addaction name="main_optionaction"/>
+     <addaction name="main_messageaction"/>
+    </widget>
+    <addaction name="menu_T"/>
+    <addaction name="menu_W_2"/>
+    <addaction name="separator"/>
+    <addaction name="main_setupaction"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="main_baiduaction"/>
+    <addaction name="main_referenceaction"/>
+    <addaction name="mian_feedbackaction"/>
+    <addaction name="separator"/>
+    <addaction name="main_systemaction"/>
+    <addaction name="main_aboutaction"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolbar1">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="main_storageaction"/>
+   <addaction name="main_dispatchaction"/>
+   <addaction name="main_monitoraction"/>
+   <addaction name="main_personnelaction"/>
+  </widget>
+  <widget class="QToolBar" name="toolbar2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="main_journalaction"/>
+   <addaction name="main_statisticaction"/>
+   <addaction name="main_reportaction"/>
+   <addaction name="main_exitaction"/>
+  </widget>
+  <widget class="QToolBar" name="toolbar3">
+   <property name="windowTitle">
+    <string>toolBar_3</string>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="main_inforaction"/>
+   <addaction name="main_timeaction"/>
+  </widget>
+  <widget class="QDockWidget" name="dockwidget1">
+   <property name="minimumSize">
+    <size>
+     <width>132</width>
+     <height>102</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>132</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>选项栏</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTreeWidget" name="treeWidget">
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="tabKeyNavigation">
+        <bool>true</bool>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>false</bool>
+       </property>
+       <property name="animated">
+        <bool>true</bool>
+       </property>
+       <property name="headerHidden">
+        <bool>true</bool>
+       </property>
+       <attribute name="headerVisible">
+        <bool>false</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>工作内容</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>物料</string>
+        </property>
+        <property name="toolTip">
+         <string>仓 储</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/image/仓储 (1).png</normaloff>:/image/仓储 (1).png</iconset>
+        </property>
+        <property name="flags">
+         <set>ItemIsSelectable|ItemIsEnabled</set>
+        </property>
+        <item>
+         <property name="text">
+          <string>库 存</string>
+         </property>
+         <property name="toolTip">
+          <string>库 存</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/库存W.png</normaloff>:/image/库存W.png</iconset>
+         </property>
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsEnabled</set>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>入 库</string>
+         </property>
+         <property name="toolTip">
+          <string>入 库</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/入库W.png</normaloff>:/image/入库W.png</iconset>
+         </property>
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsEnabled</set>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>出 库</string>
+         </property>
+         <property name="toolTip">
+          <string>出 库</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/出库W.png</normaloff>:/image/出库W.png</iconset>
+         </property>
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsEnabled</set>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>盘 点</string>
+         </property>
+         <property name="toolTip">
+          <string>盘 点</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/盘点W.png</normaloff>:/image/盘点W.png</iconset>
+         </property>
+         <property name="flags">
+          <set>ItemIsSelectable|ItemIsEnabled</set>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>调 度</string>
+        </property>
+        <property name="toolTip">
+         <string>调 度</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/image/调度W.png</normaloff>:/image/调度W.png</iconset>
+        </property>
+        <item>
+         <property name="text">
+          <string>任务调度</string>
+         </property>
+         <property name="toolTip">
+          <string>任务调度</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/任务.png</normaloff>:/image/任务.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>车辆调度</string>
+         </property>
+         <property name="toolTip">
+          <string>车辆调度</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/车辆管理-2.png</normaloff>:/image/车辆管理-2.png</iconset>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>监 控</string>
+        </property>
+        <property name="toolTip">
+         <string>监 控</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/image/监控W.png</normaloff>:/image/监控W.png</iconset>
+        </property>
+        <item>
+         <property name="text">
+          <string>AGV监控</string>
+         </property>
+         <property name="toolTip">
+          <string>AGV监控</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/agv机器人.png</normaloff>:/image/agv机器人.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>机器人监控</string>
+         </property>
+         <property name="toolTip">
+          <string>机器人监控</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/机械手.png</normaloff>:/image/机械手.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>机床监控</string>
+         </property>
+         <property name="toolTip">
+          <string>机床监控</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/xxq-小型加工机床.png</normaloff>:/image/xxq-小型加工机床.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>其他设备监控</string>
+         </property>
+         <property name="toolTip">
+          <string>其他设备监控</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/实时监控.png</normaloff>:/image/实时监控.png</iconset>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>人 员</string>
+        </property>
+        <property name="toolTip">
+         <string>人 员</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/image/W人员.png</normaloff>:/image/W人员.png</iconset>
+        </property>
+        <item>
+         <property name="text">
+          <string>人员信息</string>
+         </property>
+         <property name="toolTip">
+          <string>人员信息</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/人员信息.png</normaloff>:/image/人员信息.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>权限管理</string>
+         </property>
+         <property name="toolTip">
+          <string>权限管理</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/权限.png</normaloff>:/image/权限.png</iconset>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>日 志</string>
+        </property>
+        <property name="toolTip">
+         <string>日 志</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/image/日志W.png</normaloff>:/image/日志W.png</iconset>
+        </property>
+        <item>
+         <property name="text">
+          <string>仓储日志</string>
+         </property>
+         <property name="toolTip">
+          <string>仓储日志</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A仓储.png</normaloff>:/image/A仓储.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>调度日志</string>
+         </property>
+         <property name="toolTip">
+          <string>调度日志</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A调度任务日志.png</normaloff>:/image/A调度任务日志.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>监控日志</string>
+         </property>
+         <property name="toolTip">
+          <string>监控日志</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A仓储日志.png</normaloff>:/image/A仓储日志.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>人员日志</string>
+         </property>
+         <property name="toolTip">
+          <string>人员日志</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A操作日志.png</normaloff>:/image/A操作日志.png</iconset>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>统 计</string>
+        </property>
+        <property name="toolTip">
+         <string>统 计</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/image/统计W.png</normaloff>:/image/统计W.png</iconset>
+        </property>
+        <item>
+         <property name="text">
+          <string>仓储统计</string>
+         </property>
+         <property name="toolTip">
+          <string>管料统计</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A管线材料统计.png</normaloff>:/image/A管线材料统计.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>监控统计</string>
+         </property>
+         <property name="toolTip">
+          <string>车辆统计</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A车辆信息.png</normaloff>:/image/A车辆信息.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>调度统计</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A调度记录.png</normaloff>:/image/A调度记录.png</iconset>
+         </property>
+        </item>
+       </item>
+       <item>
+        <property name="text">
+         <string>报 表</string>
+        </property>
+        <property name="toolTip">
+         <string>报 表</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/image/报表W.png</normaloff>:/image/报表W.png</iconset>
+        </property>
+        <item>
+         <property name="text">
+          <string>仓储报表</string>
+         </property>
+         <property name="toolTip">
+          <string>仓储报表</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A报表.png</normaloff>:/image/A报表.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>人员报表</string>
+         </property>
+         <property name="toolTip">
+          <string>人员报表</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../resource.qrc">
+           <normaloff>:/image/A人事报表.png</normaloff>:/image/A人事报表.png</iconset>
+         </property>
+        </item>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockwidget2">
+   <property name="minimumSize">
+    <size>
+     <width>132</width>
+     <height>118</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>132</width>
+     <height>524287</height>
+    </size>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>消息栏</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <layout class="QGridLayout" name="gridLayout_6">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QListWidget" name="listWidget_2">
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>导航控制信息系统</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息6</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息7</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息8</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息9</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息10</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息11</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>其他消息12</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="main_storageaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/B仓储64X64.png</normaloff>:/image/B仓储64X64.png</iconset>
+   </property>
+   <property name="text">
+    <string>仓 储</string>
+   </property>
+   <property name="toolTip">
+    <string>仓 储</string>
+   </property>
+  </action>
+  <action name="main_dispatchaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/B调度64X64.png</normaloff>:/image/B调度64X64.png</iconset>
+   </property>
+   <property name="text">
+    <string>调 度</string>
+   </property>
+   <property name="toolTip">
+    <string>调 度</string>
+   </property>
+  </action>
+  <action name="main_monitoraction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/监控64X64.png</normaloff>:/image/监控64X64.png</iconset>
+   </property>
+   <property name="text">
+    <string>监 控</string>
+   </property>
+   <property name="toolTip">
+    <string>监 控</string>
+   </property>
+  </action>
+  <action name="main_personnelaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/B人员64X64.png</normaloff>:/image/B人员64X64.png</iconset>
+   </property>
+   <property name="text">
+    <string>人 员</string>
+   </property>
+   <property name="toolTip">
+    <string>人 员</string>
+   </property>
+  </action>
+  <action name="main_journalaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/日志64X64.png</normaloff>:/image/日志64X64.png</iconset>
+   </property>
+   <property name="text">
+    <string>日 志</string>
+   </property>
+   <property name="toolTip">
+    <string>日 志</string>
+   </property>
+  </action>
+  <action name="main_statisticaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/B统计64X64.png</normaloff>:/image/B统计64X64.png</iconset>
+   </property>
+   <property name="text">
+    <string>统 计</string>
+   </property>
+   <property name="toolTip">
+    <string>统 计</string>
+   </property>
+  </action>
+  <action name="main_reportaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/报表64X64.png</normaloff>:/image/报表64X64.png</iconset>
+   </property>
+   <property name="text">
+    <string>报 表</string>
+   </property>
+   <property name="toolTip">
+    <string>报 表</string>
+   </property>
+  </action>
+  <action name="main_exitaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/B退出.png</normaloff>:/image/B退出.png</iconset>
+   </property>
+   <property name="text">
+    <string>退 出</string>
+   </property>
+  </action>
+  <action name="main_inforaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/信息2.png</normaloff>:/image/信息2.png</iconset>
+   </property>
+   <property name="text">
+    <string>信 息</string>
+   </property>
+   <property name="toolTip">
+    <string>信 息</string>
+   </property>
+  </action>
+  <action name="main_filemanageaction">
+   <property name="text">
+    <string>文件管理(&amp;M)</string>
+   </property>
+   <property name="toolTip">
+    <string>文件管理</string>
+   </property>
+  </action>
+  <action name="main_quitaction">
+   <property name="text">
+    <string>退 出(&amp;X)</string>
+   </property>
+   <property name="toolTip">
+    <string>退 出</string>
+   </property>
+  </action>
+  <action name="main_timeaction">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/image/时间 (1).png</normaloff>:/image/时间 (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>2017年6月21日 17:30</string>
+   </property>
+   <property name="toolTip">
+    <string>时 间</string>
+   </property>
+  </action>
+  <action name="main_baiduaction">
+   <property name="text">
+    <string>百度一下(&amp;B)</string>
+   </property>
+   <property name="toolTip">
+    <string>百度一下</string>
+   </property>
+  </action>
+  <action name="main_referenceaction">
+   <property name="text">
+    <string>使用说明(&amp;R)</string>
+   </property>
+   <property name="toolTip">
+    <string>使用说明</string>
+   </property>
+  </action>
+  <action name="main_systemaction">
+   <property name="text">
+    <string>本机信息(&amp;I)</string>
+   </property>
+   <property name="toolTip">
+    <string>本机信息</string>
+   </property>
+  </action>
+  <action name="main_aboutaction">
+   <property name="text">
+    <string>关于系统(&amp;S)</string>
+   </property>
+   <property name="toolTip">
+    <string>关于系统</string>
+   </property>
+  </action>
+  <action name="main_setupaction">
+   <property name="text">
+    <string>设 置(&amp;C)</string>
+   </property>
+   <property name="toolTip">
+    <string>设 置</string>
+   </property>
+  </action>
+  <action name="main_toolbar1action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>工具栏1</string>
+   </property>
+   <property name="toolTip">
+    <string>工具栏1</string>
+   </property>
+  </action>
+  <action name="main_toobar2action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>工具栏2</string>
+   </property>
+   <property name="toolTip">
+    <string>工具栏2</string>
+   </property>
+  </action>
+  <action name="mian_toolbar3action">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>工具栏3</string>
+   </property>
+   <property name="toolTip">
+    <string>工具栏3</string>
+   </property>
+  </action>
+  <action name="main_optionaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>选项栏</string>
+   </property>
+   <property name="toolTip">
+    <string>选项栏</string>
+   </property>
+  </action>
+  <action name="main_messageaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>消息栏</string>
+   </property>
+   <property name="toolTip">
+    <string>消息栏</string>
+   </property>
+  </action>
+  <action name="main_adminaction">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>显示主页</string>
+   </property>
+   <property name="toolTip">
+    <string>显示主页</string>
+   </property>
+  </action>
+  <action name="main_fullscreenaction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>全 屏(&amp;F)</string>
+   </property>
+   <property name="toolTip">
+    <string>全 屏</string>
+   </property>
+  </action>
+  <action name="mian_feedbackaction">
+   <property name="text">
+    <string>信息反馈(&amp;F)</string>
+   </property>
+   <property name="toolTip">
+    <string>信息反馈</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
