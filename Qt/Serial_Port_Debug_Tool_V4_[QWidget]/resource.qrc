@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rc/RTK-WDT.ico</file>
+    </qresource>
+</RCC>
