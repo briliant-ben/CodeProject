@@ -1,0 +1,6 @@
+output/
+build/
+test/build
+
+!build/build.sh
+!test/build/build.sh
